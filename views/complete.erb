@@ -44,12 +44,9 @@
         <p>ありがとうございました。送信を受け付けました。</p>
         <p>3営業日以内をめどにご返信いたしますので、しばらくお待ちください。</p>
         <table>
-            <thead>
                 <tr>
                     <th>送信内容</th>
                 </tr>
-            </thead>
-            <tbody>
                 <tr>
                     <td>会社名</td>
                     <td><%= company  %></td>
@@ -69,6 +66,7 @@
                     <td>内容</td>
                     <td><%= content.gsub(/\r\n|\r|\n/, "<br>")  %></td>
                 </tr>
+        </table>
         <div class="text-center mb-4">
             <!-- 「戻る」ボタンを緑色にする設定を追加 -->
             <a href="/" class="btn btn-success">戻る</a>
